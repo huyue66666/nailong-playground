@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fff7df" />
+    <meta name="description" content="奶龙乐园——陪奶龙玩一会儿，收集一点小小开心。" />
+    <title>奶龙乐园｜今天也要开心呀</title>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="#top" aria-label="回到奶龙乐园首页">
+          <span class="brand-mark" aria-hidden="true">🐲</span>
+          <span><strong>奶龙乐园</strong><small>小小开心收集站</small></span>
+        </a>
+        <div class="top-note"><span class="status-dot"></span>奶龙在线陪伴中</div>
+      </header>
+
+      <main id="top">
+        <section class="hero-section section-wrap" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow"><span>✦</span> 今日份软乎乎已送达</p>
+            <h1 id="hero-title">嗨！我是奶龙，<br /><em>一起玩一会儿嘛～</em></h1>
+            <p class="hero-subtitle">点点我，看看今天的奶龙是什么心情。每一次互动，都会变成一颗小星星。</p>
+            <div class="hero-actions">
+              <button class="primary-btn" id="hero-play-btn">去接星星 <span>→</span></button>
+              <button class="text-btn" id="hero-tap-btn">摸摸奶龙 <span>♡</span></button>
+            </div>
+            <div class="micro-proof"><span>☀</span> 已有 <strong id="happy-count">128</strong> 个小伙伴陪奶龙玩过啦</div>
+          </div>
+
+          <div class="hero-art-wrap">
+            <div class="sun-sticker">今天也要<br /><b>元气满满</b>！</div>
+            <div class="doodle doodle-left">✦</div>
+            <div class="doodle doodle-right">♡</div>
+            <button class="nailong-stage" id="nailong" aria-label="点击奶龙互动">
+              <span class="speech-bubble" id="speech-bubble">戳戳我试试！</span>
+              <span class="character-shadow"></span>
+              <span class="nailong-body">
+                <span class="nailong-tail"></span>
+                <span class="nailong-arm arm-left"></span>
+                <span class="nailong-arm arm-right"></span>
+                <span class="nailong-belly"></span>
+                <span class="nailong-face">
+                  <span class="nailong-eye eye-left"></span><span class="nailong-eye eye-right"></span>
+                  <span class="nailong-cheek cheek-left"></span><span class="nailong-cheek cheek-right"></span>
+                  <span class="nailong-mouth"></span>
+                </span>
+                <span class="nailong-foot foot-left"></span><span class="nailong-foot foot-right"></span>
+              </span>
+              <span class="tap-hint">点我一下！</span>
+            </button>
+          </div>
+        </section>
+
+        <section class="status-section section-wrap" aria-labelledby="status-title">
+          <div class="section-heading">
+            <div><p class="eyebrow pink"><span>✦</span> 奶龙今日状态</p><h2 id="status-title">小小状态，大大能量</h2></div>
+            <span class="date-chip">11月16日 · 星期一</span>
+          </div>
+          <div class="status-layout">
+            <article class="mood-card paper-card">
+              <div class="card-label"><span class="sticker-icon pink-sticker">☻</span><span>现在的心情</span></div>
+              <div class="mood-main"><span class="mood-emoji" id="mood-emoji">🥰</span><div><strong id="mood-name">开心冒泡</strong><p id="mood-copy">今天的空气里都是甜甜的！</p></div></div>
+              <div class="mood-tags"><span>软乎乎</span><span>想玩耍</span><span>有一点点期待</span></div>
+            </article>
+            <article class="energy-card paper-card">
+              <div class="card-label"><span class="sticker-icon yellow-sticker">⚡</span><span>快乐能量</span><strong id="energy-value">76%</strong></div>
+              <div class="energy-track"><div class="energy-fill" id="energy-fill" style="width: 76%"><span></span></div></div>
+              <div class="energy-foot"><span>电量充足，可以出发！</span><span id="energy-gain">+0 今日互动</span></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="game-section section-wrap" id="game" aria-labelledby="game-title">
+          <div class="game-copy">
+            <p class="eyebrow blue"><span>✦</span> 奶龙小游戏</p>
+            <h2 id="game-title">接住小星星，<br /><em>把好运装进口袋</em></h2>
+            <p>星星会在夜空里闪一下，眼疾手快点中它！12秒内接得越多，奶龙就越开心。</p>
+            <div class="game-meta"><span>⌁ 12秒一局</span><span>★ 最高分会记住</span></div>
+            <button class="primary-btn game-start-btn" id="start-game">开始接星星 <span>★</span></button>
+          </div>
+          <div class="game-machine paper-card" id="game-machine">
+            <div class="machine-top"><span class="machine-title">STAR CATCHER</span><span class="machine-lights"><i></i><i></i><i></i></span></div>
+            <div class="sky-board" id="sky-board">
+              <div class="sky-intro" id="sky-intro"><span>★</span><strong>准备好了吗？</strong><small>点按钮开始游戏</small></div>
+              <button class="star-target" id="star-target" aria-label="接住星星">★</button>
+              <div class="game-score"><span>SCORE <b id="score">0</b></span><span>TIME <b id="time">12</b></span></div>
+            </div>
+            <div class="machine-foot"><span>奶龙的好运发射器</span><span id="best-score">BEST 0</span></div>
+          </div>
+        </section>
+
+        <section class="quote-section section-wrap">
+          <div class="quote-card"><span class="quote-mark">“</span><p id="quote-text">今天也要记得，对自己温柔一点点。</p><button id="new-quote" aria-label="换一句鼓励">换一句 <span>↻</span></button><span class="quote-deco">♡</span></div>
+        </section>
+      </main>
+
+      <footer class="footer"><span>奶龙乐园 · 今天也要开心呀</span><span>Made with <b>♡</b> for little joys</span></footer>
+      <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
